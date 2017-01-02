@@ -153,6 +153,7 @@
     ,Load_ListenerClick: function(e){
       //Eventos click para los botones
       var teclaId = this.id;
+      this.style.padding = "2px";
       var numerosExp = /^[0-9]$/;
       var nameToOperacion = {"dividido":"/", "por":"*", "menos":"-", "mas":"+"}
       if(teclaId == "on"){
@@ -173,6 +174,11 @@
       else if(teclaId =="igual"){
         Operacion_Resultado();
       }
+      setTimeout(function(){
+        document.getElementById(teclaId).style.padding = "0";
+        }
+      , 250
+      , teclaId);
     }
     , Init: function(){
         //Aignación del listener del evento Keypress
