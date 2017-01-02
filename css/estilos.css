@@ -44,6 +44,9 @@ body{
   width: 22%;
   height: 62.91px;
 }
+.tecla{
+  transition: 0.2s;
+}
 @font-face {
   font-family: digital;
   src: url("../fonts/digital.ttf");
